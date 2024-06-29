@@ -1,0 +1,31 @@
+ui/ux: 
++ chọn thư mục nguồn cái ni sẽ cần 1 file Json lưu lại tên thư mục = Xong
++ chọn thư mục đích = Xong
++ chọn ảnh cần convert= xong
++ chọn kích thước mặc định ảnh đích  = Xong
++ thêm xóa kích thước ratio và lưu (CRD)= xong
++ chọn tọa độ x,y để crop = xong 
++ chạy Auto = xong
+
+Thư viện 
+pip install Pillow (GUI)
+pip install event-dispatching (Event)
+pip install watchdog (EventHandle bắt skien có file mới vào folder)
+pip install pyinstaller (gói code lại thành packet)
+pip install pywin32 (bắt sự kiện thu nhỏ chương trình xuống khay)
+pip install pystray (tạo thu nhỏ ở notificationbar)
+
+
+Build exe 
+
+==== Lệnh build 
+pyinstaller --windowed --onefile UIUX.py
+==== Lệnh build kèm icon
+pyinstaller --icon my_icon.ico main.py
+==== Build file spec - cấu hình trong file và chúng ta sẽ build theo cấu hìn
+file
+pyinstaller UIUX.spec ==> UIUX ở đây thì thay bằng tên file py mình muốn build
+
+
+
+
